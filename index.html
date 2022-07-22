@@ -1,0 +1,26 @@
+<html ondrop="handleDrop(event);" ondragover="dragOverHandler(event);">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <input type="file" accept=".lss">
+        <br><br>
+        <p id="header"></p>
+        <table class="categoryBoard centerHoriz" id="splitContent"></table>
+        <div id="compNameDiv" style="display: none;">
+            <p title="Leaving the field blank will cause the comparison to override the Personal Best. This is useful if the intention is to use LiveSplit's 'Import Comparison From File' feature.">Comparison Name:</p> <input id="comparisonName" type="text">
+        </div>
+        <ul>
+            <li>
+                <a id="downloadBtn" style="color: black; display: none;" class="nav" onclick="handleDownload();">
+                    <div class="nav-content">Download Split File</div>
+                </a>
+            </li>
+        </ul>
+
+        <p>Formula and idea created by <a href="https://twitter.com/Source28_">Source</a><br>Website made by <a href="https://twitter.com/aMinibeast">Minibeast</a><br>HTML/CSS sourced from <a href="https://github.com/ZacharyTalis">ZacharyTalis</a></p>
+        <p><a href="files/spreadsheet.xlsx">Original spreadsheet download</a></p>
+
+        <script src="parser.js"></script>
+    </body>
+</html>
